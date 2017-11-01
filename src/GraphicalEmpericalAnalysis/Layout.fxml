@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="502.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraphicalEmpericalAnalysis.LayoutController">
+   <center>
+      <JFXTabPane prefHeight="365.0" prefWidth="483.0" BorderPane.alignment="CENTER">
+         <tabs>
+            <Tab text="Sorting Algorithms">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox prefHeight="425.0" prefWidth="569.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox fx:id="SSideBar" prefHeight="423.0" prefWidth="166.0" />
+                              <AnchorPane fx:id="apane" minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="499.0" HBox.hgrow="SOMETIMES">
+                                 <children>
+                                    <VBox fx:id="vpane" prefHeight="423.0" prefWidth="395.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="24.0" prefWidth="555.0" spacing="10.0">
+                                             <children>
+                                                <Label contentDisplay="RIGHT" graphicTextGap="6.0" text="Input Size" HBox.hgrow="ALWAYS">
+                                                   <graphic>
+                                                      <JFXTextField fx:id="sizeTb" />
+                                                   </graphic>
+                                                </Label>
+                                                <Label contentDisplay="RIGHT" graphicTextGap="6.0" text="State" HBox.hgrow="ALWAYS">
+                                                   <graphic>
+                                                      <JFXComboBox fx:id="stateCb" />
+                                                   </graphic>
+                                                </Label>
+                                                <Label contentDisplay="RIGHT" graphicTextGap="6.0" text="Peak" HBox.hgrow="ALWAYS">
+                                                   <graphic>
+                                                      <JFXTextField fx:id="peakTf" />
+                                                   </graphic>
+                                                </Label>
+                                                <Label contentDisplay="RIGHT" graphicTextGap="6.0" text="Delay">
+                                                   <graphic>
+                                                      <JFXTextField fx:id="simSpeedTf" />
+                                                   </graphic>
+                                                </Label>
+                                                <JFXButton fx:id="sSolveBtn" buttonType="RAISED" ripplerFill="#2fa5c3" text="Simulate" />
+                                                <JFXButton fx:id="sResetBtn" buttonType="RAISED" ripplerFill="#2fa5c3" text="Reset" />
+                                                <JFXToggleButton fx:id="graphicTg" selected="true" text="Graphical Simulation" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                          </HBox>
+                                          <FlowPane fx:id="SMainPane" hgap="5.0" prefHeight="670.0" prefWidth="451.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding></AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Graph Algorithms">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox prefHeight="425.0" prefWidth="569.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="42.0" prefWidth="569.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Emperical Analysis">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
