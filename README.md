@@ -3,6 +3,8 @@ A Java based graphical analysis of sorting and graph algorithms.
 
 Aimed at analysing and visualising the properties of sorting and graph algorithms.
 
+![Application Sample](Sample.PNG)
+
 # Sorting Algorithms
   It analyzes **properties** of pre-inputted sorting algorithms such as 
   * The state of the sequence:
